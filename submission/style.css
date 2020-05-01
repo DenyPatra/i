@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+html,
+body {
+  background: rgb(5, 5, 5);
+}
+
+header {
+  background: url(./img/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron {
+  height: 80vh;
+  position: relative;
+}
+
+.jumbotron .card {
+  border-radius: 0 100px 100px 0;
+  color: whitesmoke;
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 50px;
+}
+
+.jumbotron .card .title {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.jumbotron .card .desc {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(3, 3, 3, 0.9);
+  transition: 2000ms;
+}
+
+nav a {
+  display: block;
+  padding: 30px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 300ms;
+}
+
+nav a:hover {
+  color: rgb(98, 98, 211);
+}
+
+/* ---- MAIN -- CONTENT ---- */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-container {
+  /* border: 1px solid white; */
+  max-width: 1000px;
+  padding-right: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.content .title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.content .line {
+  /* flex-basis: 10px; */
+  min-width: 8px;
+  max-width: 8px;
+  background: rgb(98, 98, 211);
+  height: auto;
+  margin-right: 10px;
+}
+
+.content .desc {
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+/* ---- MAIN -- ASIDW ---- */
+
+aside {
+  max-width: 400px;
+
+  /* border: 1px solid white; */
+  font-weight: 600;
+}
+
+.aside-container {
+  /* border-left: 3px solid whitesmoke; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+aside img {
+  width: 80%;
+  border-radius: 30px;
+  border: 2px solid whitesmoke;
+  margin-bottom: 10px;
+}
+
+aside .line {
+  height: 2px;
+  margin: 10px 0;
+  width: 70%;
+  background: whitesmoke;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background: rgb(98, 98, 211);
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron .card {
+    max-width: 80%;
+  }
+
+  .jumbotron .card .title {
+    font-size: 2.4em;
+  }
+
+  nav a {
+    padding: 30px 15px;
+  }
+
+  main .container {
+    flex-direction: column;
+    padding: 50px 60px;
+  }
+
+  .content .desc {
+    text-align: left;
+  }
+
+  aside {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  aside img {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main .container {
+    padding: 50px;
+  }
+  nav a {
+    padding: 20px 7px;
+  }
+}
