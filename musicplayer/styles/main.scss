@@ -1,0 +1,50 @@
+$color1: #e59d84;
+
+.bg-myorange {
+    background-color: $color1;
+}
+
+.sosmed a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sosmed svg {
+    display: block;
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+
+.sosmed a:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.weirdgenius svg {
+    fill: white;
+    width: 80%;
+    max-height: 250px;
+}
+
+
+
+.spotify svg {
+    height: 35px;
+    fill: white;
+}
+
+.down {
+    // position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: white;
+}
+
+.down svg {
+    height: 20px;
+    fill: $color1;
+}
